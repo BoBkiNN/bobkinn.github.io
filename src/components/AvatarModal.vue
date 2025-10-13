@@ -66,7 +66,7 @@ const downloadImage = () => {
 /* анимация появления картинки */
 .zoom-enter-from,
 .zoom-leave-to {
-  transform: scale(0.8);
+  transform: scale(0.1);
   opacity: 0;
 }
 .zoom-enter-active,
