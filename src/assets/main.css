@@ -1,36 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@200..700&display=swap');
+
 @import './base.css';
 @import "tailwindcss";
+
+
+:root {
+  --color-accent: #BB9BFF;
+}
+
+.primary-font {
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  font-family: "Cascadia Code", sans-serif;
 }
 
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--color-accent);
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: #bb9bff46;
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }
