@@ -3,7 +3,7 @@
     <img
       :src="avatarUrl"
       alt="Avatar"
-      class="w-128 h-128 rounded-full object-cover cursor-pointer shadow-md hover:scale-101 transition-transform"
+      class="max-w-96 max-h-96 rounded-full object-cover cursor-pointer shadow-md hover:scale-101 transition-transform"
       @click="showModal = true"
     />
 
