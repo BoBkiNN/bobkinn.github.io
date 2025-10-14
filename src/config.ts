@@ -31,7 +31,7 @@ export default {
     },
     github: {
       url: "https://github.com/BoBkiNN",
-      icons: ["https://github.githubassets.com/favicons/favicon.png"],
+      icons: ["assets/icons/github.svg"],
       text: "GitHub"
     }
   }
