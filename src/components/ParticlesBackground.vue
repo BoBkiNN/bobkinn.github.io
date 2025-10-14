@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import VueParticles from '@tsparticles/vue3';
-</script>
-
 <template>
   <!-- <vue-particles id="tsparticles" url="http://foo.bar/particles.json" /> -->
 
