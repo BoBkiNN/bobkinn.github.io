@@ -26,6 +26,7 @@ import config from '@/config';
     </div>
   </div>
   <div class="max-w-md p-0">
+    <span id="links-list-title">Мои ссылки</span>
     <LinksList/>
   </div>
 </div>
@@ -38,4 +39,10 @@ import config from '@/config';
   color: var(--color-accent);
   font-size: 3rem;
 }
+
+#links-list-title {
+  color: var(--color-accent);
+    font-size: 3rem;
+}
+
 </style>
