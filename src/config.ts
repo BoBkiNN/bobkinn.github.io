@@ -21,18 +21,15 @@ export class LinkItem {
 export default {
   mainAvatar: "main",
   links: {
-    some: {
-      url: "https://some.url",
-      icons: [
-        "assets/localsome.png",
-        "https://some.url/favicon.ico"
-      ],
-      text: "Some service"
-    },
     github: {
       url: "https://github.com/BoBkiNN",
       icons: ["assets/icons/github.svg"],
       text: "GitHub"
+    },
+    youtube: {
+      url: "https://www.youtube.com/@bobkinn",
+      icons: ["assets/icons/youtube.png"],
+      text: "YouTube"
     }
   }
 }
