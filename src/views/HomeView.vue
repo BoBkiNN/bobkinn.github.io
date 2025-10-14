@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import AvatarDisplay from '@/components/AvatarDisplay.vue';
 import LinksList from '@/components/LinksList.vue';
+import ParticlesBackground from '@/components/ParticlesBackground.vue';
 import config from '@/config';
 </script>
 
 <template>
+<ParticlesBackground/>
 <div class="flex justify-center min-h-screen gap-10 py-10">
   <!-- Аватар не сжимается -->
   <div class="flex-shrink-0">
