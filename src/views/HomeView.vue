@@ -16,7 +16,6 @@ function handleListItemClick(id: string) {
   if (id == "uids") {
     showGames()
   }
-  console.log("meow "+id)
 }
 
 </script>
