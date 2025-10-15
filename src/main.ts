@@ -9,6 +9,9 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+import Toast, { type PluginOptions, POSITION } from "vue-toastification"
+import "vue-toastification/dist/index.css"
+
 const app = createApp(App)
 
 app.use(createPinia())
@@ -19,5 +22,18 @@ app.use(Particles, {
       await loadSlim(engine); // or you can load the slim version from "tsparticles-slim" if don't need Shapes or Animations
     },
   });
+const options: PluginOptions = {
+  position: POSITION.BOTTOM_RIGHT,
+  timeout: 3000,
+  closeOnClick: true,
+  pauseOnHover: true,
+  transition: "Vue-Toastification__fade",
+  toastClassName: "my-toast",
+  bodyClassName: "my-toast-body",
+  icon: false,
+  draggable: false
+}
+
+app.use(Toast, options)
 
 app.mount('#app')

@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { useToast } from "vue-toastification"
 
 const props = defineProps<{
   gameUids: Record<string, string>
 }>()
 
 const emit = defineEmits(['close'])
+const toast = useToast()
 
 function copy(uid: string) {
   navigator.clipboard.writeText(uid)
-  // Можно добавить уведомление, например alert или Toast
-  alert(`UID ${uid} скопирован!`)
+  toast.info("Скопировано "+uid)
 }
+
 </script>
 
 <template>

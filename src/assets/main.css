@@ -32,6 +32,18 @@ a,
   padding: 3px;
 }
 
+.my-toast {
+  padding: 10px !important;
+  background-color: var(--color-background-mute) !important;
+  min-width: 120px !important;
+  margin-bottom: 0 !important;
+}
+
+.my-toast-body {
+  display: flex !important;
+  align-items: center !important;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: #bb9bff46;
