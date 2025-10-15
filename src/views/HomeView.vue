@@ -1,8 +1,24 @@
 <script setup lang="ts">
 import AvatarDisplay from '@/components/AvatarDisplay.vue';
+import GamesUidsModal from '@/components/GamesUidsModal.vue';
 import LinksList from '@/components/LinksList.vue';
 import ParticlesBackground from '@/components/ParticlesBackground.vue';
+import { useModalHost } from '@/composables/useModalHost';
 import config from '@/config';
+
+const { openModal } = useModalHost()
+
+function showGames() {
+  openModal(GamesUidsModal, { gameUids: config.gameUids })
+}
+
+function handleListItemClick(id: string) {
+  if (id == "uids") {
+    showGames()
+  }
+  console.log("meow "+id)
+}
+
 </script>
 
 <template>
@@ -29,7 +45,7 @@ import config from '@/config';
   </div>
   <div class="max-w-md p-0">
     <span id="links-list-title">Мои ссылки</span>
-    <LinksList/>
+    <LinksList @item-click="handleListItemClick"/>
   </div>
 </div>
 

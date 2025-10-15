@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import ModalHost from './components/ModalHost.vue';
 </script>
 
 <template>
@@ -18,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
   </header> -->
 
   <RouterView />
+  <ModalHost/>
 </template>
 
 <style scoped>

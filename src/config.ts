@@ -31,5 +31,8 @@ export default {
       icons: ["assets/icons/youtube.png"],
       text: "YouTube"
     }
+  },
+  gameUids: {
+    "34567890": "Some game"
   }
 }
