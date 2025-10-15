@@ -30,7 +30,7 @@
           quantity: 4
         },
         repulse: {
-          distance: 200,
+          distance: 100,
           duration: 0.4
         }
       }
@@ -41,16 +41,16 @@
       },
       links: {
         color: '#ffffff',
-        distance: 150,
+        distance: 250,
         enable: true,
-        opacity: 0.5,
+        opacity: 0.2,
         width: 1
       },
       move: {
         direction: 'none',
         enable: true,
         outModes: 'bounce',
-        random: false,
+        random: true,
         speed: 1,
         straight: false
       },
@@ -61,7 +61,7 @@
         value: 100
       },
       opacity: {
-        value: 0.5
+        value: 0.2
       },
       shape: {
         type: 'circle'
