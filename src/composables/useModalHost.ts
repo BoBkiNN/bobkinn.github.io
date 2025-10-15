@@ -1,5 +1,4 @@
-// src/composables/useModalHost.ts
-import { markRaw, ref, shallowRef, type Component } from 'vue'
+import { markRaw, shallowRef, type Component } from 'vue'
 
 interface ModalOptions {
   component: Component
