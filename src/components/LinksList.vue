@@ -13,7 +13,7 @@ function isEmpty(obj: Record<string, unknown>) {
 <template>
   <div id="links" class="rounded-xl overflow-hidden">
     <LinkItemView v-for="(item, key) in config.links" :key="key" :item="item" />
-    <ButtonItem :v-if="!isEmpty(config.gameUids)" text="Mihoyo Games UIds" @click="emit('itemClick', 'uids')"></ButtonItem>
+    <ButtonItem :v-if="!isEmpty(config.gameUids)" text="UID в играх" @click="emit('itemClick', 'uids')"></ButtonItem>
   </div>
 </template>
 

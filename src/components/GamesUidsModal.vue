@@ -15,16 +15,12 @@ function copy(uid: string) {
 </script>
 
 <template>
-  <div class="bg-neutral-900 text-white rounded-xl p-6 w-[400px] shadow-xl relative">
+  <div class="bg-neutral-900 text-white rounded-xl p-4 w-[400px] shadow-xl relative">
     <!-- Крестик закрытия -->
     <button @click="emit('close')" class="absolute top-3 right-3 text-gray-400 hover:text-white transition cursor-pointer"
       title="Закрыть">
       <span class="material-icons">close</span>
     </button>
-
-    <h2 class="text-lg font-semibold mb-4 text-center text-[var(--color-accent)]">
-      Game UIDs
-    </h2>
 
     <table class="w-full table-fixed border-collapse text-left">
       <thead class="border-b border-gray-700 text-gray-400">
@@ -39,7 +35,7 @@ function copy(uid: string) {
           <td class="py-2 px-1">{{ game }}</td>
           <td class="py-2 px-1 font-mono">{{ uid }}</td>
           <td class="py-2 px-1 text-center">
-            <button @click="copy(uid)" class="hover:opacity-80 cursor-pointer" title="Скопировать UID">
+            <button @click="copy(uid)" class="hover:opacity-80 cursor-pointer flex" title="Скопировать UID">
               <span class="material-icons text-gray-300">content_copy</span>
             </button>
           </td>
