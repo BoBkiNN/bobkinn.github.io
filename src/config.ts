@@ -34,5 +34,10 @@ export default {
   },
   gameUids: {
     "34567890": "Some game"
-  }
+  },
+  altNames: [
+    "BoBkiNN_",
+    "bobkinn",
+    "bobkinn_"
+  ]
 }

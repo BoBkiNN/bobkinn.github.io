@@ -11,6 +11,8 @@ import router from './router'
 
 import Toast, { type PluginOptions, POSITION } from "vue-toastification"
 import "vue-toastification/dist/index.css"
+import FloatingVue from 'floating-vue'
+import 'floating-vue/dist/style.css'
 
 const app = createApp(App)
 
@@ -35,5 +37,6 @@ const options: PluginOptions = {
 }
 
 app.use(Toast, options)
+app.use(FloatingVue)
 
 app.mount('#app')
