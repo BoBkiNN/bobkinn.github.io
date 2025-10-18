@@ -1,5 +1,5 @@
 
-interface LinkConfig {
+export interface LinkConfig {
   url: string;
   text: string;
   icons?: string[];

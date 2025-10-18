@@ -4,6 +4,7 @@ import GamesUidsModal from '@/components/GamesUidsModal.vue';
 import IconTooltip from '@/components/IconTooltip.vue';
 import LinksList from '@/components/LinksList.vue';
 import ParticlesBackground from '@/components/ParticlesBackground.vue';
+import ProjectList from '@/components/ProjectList.vue';
 import { useModalHost } from '@/composables/useModalHost';
 import config from '@/config';
 
@@ -23,32 +24,35 @@ function handleListItemClick(id: string) {
 
 <template>
   <ParticlesBackground />
-  <div class="flex justify-center min-h-screen gap-10 py-10">
-    <!-- Аватар не сжимается -->
-    <div class="flex-shrink-0">
-      <AvatarDisplay />
-    </div>
-
-    <!-- Текст занимает оставшееся место -->
-    <div class="max-w-1/3">
-      <div id="username" class="relative flex items-start gap-2">
-        <span>BoBkiNN</span>
-        <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
+  <div class="flex flex-col justify-center min-h-screen gap-10 py-10">
+    <div class="flex justify-center gap-10">
+      <!-- Аватар не сжимается -->
+      <div class="flex-shrink-0">
+        <AvatarDisplay />
       </div>
 
-      <div id="description">
-        <span>
-          Long long long long text sdfdsfdsfbsdf dsfdsfdsf sdf sdfdsf dsfdsfdsf
-          sdfsdfdsf ds fs df ds fdsf ds f dsf ds f dsf sdf ds fs df sdf sd f dsf<br>
-          sdfdsfdsjfndksjbflbasdfbaesbflbsdfds ds f SDFjkhKLSDFh 🎲🎲🎰🎲🎰🎰
-          🕹🕹🕹🎮🎮
-        </span>
+      <!-- Текст занимает оставшееся место -->
+      <div class="max-w-1/3">
+        <div id="username" class="relative flex items-start gap-2">
+          <span>BoBkiNN</span>
+          <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
+        </div>
+
+        <div id="description">
+          <span>
+            Long long long long text sdfdsfdsfbsdf dsfdsfdsf sdf sdfdsf dsfdsfdsf
+            sdfsdfdsf ds fs df ds fdsf ds f dsf ds f dsf sdf ds fs df sdf sd f dsf<br>
+            sdfdsfdsjfndksjbflbasdfbaesbflbsdfds ds f SDFjkhKLSDFh 🎲🎲🎰🎲🎰🎰
+            🕹🕹🕹🎮🎮
+          </span>
+        </div>
+      </div>
+      <div class="max-w-md p-0">
+        <span id="links-list-title">Мои ссылки</span>
+        <LinksList @item-click="handleListItemClick" />
       </div>
     </div>
-    <div class="max-w-md p-0">
-      <span id="links-list-title">Мои ссылки</span>
-      <LinksList @item-click="handleListItemClick" />
-    </div>
+    <ProjectList />
   </div>
 
 </template>
