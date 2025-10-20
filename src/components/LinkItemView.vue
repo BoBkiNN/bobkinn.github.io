@@ -19,7 +19,7 @@ defineProps<{
         :key="i"
         :src="icon"
         alt="icon"
-        class="w-6 h-6 object-contain"
+        class="w-6 h-6 object-contain rounded-sm"
       />
       <span class="">{{ item.text }}</span>
     </div>
