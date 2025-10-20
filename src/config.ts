@@ -49,6 +49,11 @@ export default {
       url: "https://myanimelist.net/profile/BoBkiNN_",
       text: "MyAnimeList",
       icons: ["https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"]
+    },
+    reddit: {
+      url: "https://www.reddit.com/user/BoBkiNN_/",
+      text: "Reddit",
+      icons: ["assets/icons/reddit.svg"]
     }
   },
   gameUids: {
