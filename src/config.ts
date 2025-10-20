@@ -17,6 +17,13 @@ export class LinkItem {
   }
 }
 
+export interface Config {
+  mainAvatar: string
+  links: Record<string, LinkConfig>
+  gameUids: Record<string, string>
+  altNames: string[]
+}
+
 
 export default {
   mainAvatar: "main",
@@ -40,4 +47,4 @@ export default {
     "bobkinn",
     "bobkinn_"
   ]
-}
+} as Config
