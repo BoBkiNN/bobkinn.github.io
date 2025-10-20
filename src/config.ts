@@ -44,6 +44,11 @@ export default {
       url: "https://modrinth.com/user/BoBkiNN",
       icons: ["https://github.com/modrinth/code/blob/4a9f0b8a0ef189c15b411815f28e845109120316/apps/app/icons/Square30x30Logo.png?raw=true"],
       text: "Modrinth"
+    },
+    mal: {
+      url: "https://myanimelist.net/profile/BoBkiNN_",
+      text: "MyAnimeList",
+      icons: ["https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"]
     }
   },
   gameUids: {
