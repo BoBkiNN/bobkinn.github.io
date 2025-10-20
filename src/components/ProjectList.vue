@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import type { Project } from '@/models';
 import ProjectCard from './ProjectCard.vue';
+import config from '@/config';
 
 // defineProps<{
 //   projects: Project[]
 // }>()
-const projects: Project[] = [{
+const projects = config.projects
+projects.push({
   name: "Test",
   links: [{
     icons: ["assets/icons/github.svg"],
@@ -15,7 +16,7 @@ const projects: Project[] = [{
   descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds<br>meowm meow  eo",
   expandLinks: true,
   icon: "assets/icons/github.svg"
-}]
+})
 </script>
 
 <template>

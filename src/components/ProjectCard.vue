@@ -6,12 +6,15 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 min-h-7 min-w-30 max-w-[400px] p-3 rounded-2xl shadow bg-[#36363626] backdrop-blur-xs">
+  <div
+    class="flex flex-col gap-2 min-h-7 min-w-30 max-w-[400px] p-3 rounded-2xl shadow bg-[#36363626] backdrop-blur-xs">
     <div class="flex gap-2 items-start">
       <img v-if="project.icon" :src="project.icon" class="w-15" />
       <div class="flex gap-2 flex-col">
         <h2 class="text-white">{{ project.name }}</h2>
-        <p v-html="project.descriptionId"></p>
+        <p class="text-white break-all whitespace-pre-line">
+          {{ project.descriptionId }}
+        </p>
         <!-- TODO use description id for i18n -->
       </div>
     </div>
