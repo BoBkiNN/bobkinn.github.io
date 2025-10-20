@@ -1,6 +1,4 @@
 <template>
-  <!-- <vue-particles id="tsparticles" url="http://foo.bar/particles.json" /> -->
-
   <vue-particles id="tsparticles" :options="{
     background: {
       color: {
