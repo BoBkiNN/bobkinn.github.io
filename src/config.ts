@@ -57,7 +57,8 @@ export default {
     }
   },
   gameUids: {
-    "34567890": "Some game"
+    "736950455": "Genshin Impact",
+    "1500835421": "ZenlessZoneZero"
   },
   altNames: [
     "BoBkiNN_",
