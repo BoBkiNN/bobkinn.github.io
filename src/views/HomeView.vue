@@ -28,7 +28,7 @@ const bdayText = formatBirthday(config.birthday)
 <template>
   <ParticlesBackground />
   <div class="flex flex-col justify-center min-h-screen gap-10 py-10">
-    <div class="flex justify-center gap-10">
+    <div class="flex justify-between gap-10">
       <!-- Аватар не сжимается -->
       <div class="flex-shrink-0">
         <AvatarDisplay />
