@@ -13,7 +13,7 @@ projects.push({
     text: "Some github",
     url: "https://example.com"
   }],
-  descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds\nmeowm meow  eo",
+  descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds\nmeowm meow  eofff",
   expandLinks: true,
   icon: "assets/icons/github.svg"
 })
@@ -22,7 +22,7 @@ projects.push({
 <template>
   <div>
     <span class="title">Мои проекты</span>
-    <div class="flex gap-5">
+    <div class="flex gap-5 flex-wrap">
       <ProjectCard v-for="project in projects" :key="project.name" :project="project" />
     </div>
   </div>
