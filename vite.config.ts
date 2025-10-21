@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import { execSync } from 'child_process'
+import { buildI18n, LANG_DIR } from "./scripts/build-i18n";
 
 const commitHash = execSync('git rev-parse HEAD').toString().trim()
 
@@ -23,6 +24,23 @@ export default defineConfig({
         })
       },
     },
+    {
+      name: "vite-plugin-i18n-compiler",
+      buildStart() {
+        buildI18n();
+      },
+      configureServer(server) {
+        const watcher = server.watcher;
+        watcher.add(LANG_DIR);
+
+        watcher.on("change", (file) => {
+          if (file.startsWith(LANG_DIR)) {
+            buildI18n();
+            server.ws.send({ type: "full-reload" });
+          }
+        });
+      },
+    }
   ],
   resolve: {
     alias: {
