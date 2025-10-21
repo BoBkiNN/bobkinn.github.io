@@ -25,7 +25,8 @@ export interface Config {
   altNames: string[]
   projects: Project[]
   birthday: Birthday
-  myTimezone: string
+  myTimezone: string,
+  thisRepositoryLink: string
 }
 
 
@@ -95,5 +96,6 @@ export default {
     day: 24,
     month: 11
   },
-  myTimezone: "UTC+5"
+  myTimezone: "UTC+5",
+  thisRepositoryLink: "https://github.com/BoBkiNN/bobkinn.github.io/"
 } as Config

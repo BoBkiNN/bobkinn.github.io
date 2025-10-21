@@ -44,6 +44,17 @@ a,
   align-items: center !important;
 }
 
+.a-secondary {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: unset;
+}
+
+.a-secondary:hover {
+  color: var(--color-accent);
+  background-color: unset;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: #bb9bff46;
