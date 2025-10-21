@@ -1,22 +1,4 @@
-import type { Project, Birthday } from "./models";
-
-export interface LinkConfig {
-  url: string;
-  text: string;
-  icons?: string[];
-}
-
-export interface Config {
-  mainAvatar: string
-  links: Record<string, LinkConfig>
-  gameUids: Record<string, string>
-  altNames: string[]
-  projects: Project[]
-  birthday: Birthday
-  myTimezone: string,
-  thisRepositoryLink: string
-}
-
+import type { Config } from "./models";
 
 export default {
   mainAvatar: "main",

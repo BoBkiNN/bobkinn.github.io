@@ -1,4 +1,3 @@
-import {type LinkConfig} from "./config"
 
 export interface Project {
   name: string
@@ -15,6 +14,23 @@ export interface Birthday {
   day: number
   month: number
   year?: number
+}
+
+export interface LinkConfig {
+  url: string;
+  text: string;
+  icons?: string[];
+}
+
+export interface Config {
+  mainAvatar: string
+  links: Record<string, LinkConfig>
+  gameUids: Record<string, string>
+  altNames: string[]
+  projects: Project[]
+  birthday: Birthday
+  myTimezone: string,
+  thisRepositoryLink: string
 }
 
 /** Formats the birthday as `dd.mm` or `dd.mm.yyyy` */

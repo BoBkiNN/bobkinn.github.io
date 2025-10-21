@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { LinkConfig } from '@/config'
+import type { LinkConfig } from '@/models'
 
 defineProps<{
   item: LinkConfig
