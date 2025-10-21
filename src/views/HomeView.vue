@@ -7,6 +7,7 @@ import ParticlesBackground from '@/components/ParticlesBackground.vue';
 import ProjectList from '@/components/ProjectList.vue';
 import { useModalHost } from '@/composables/useModalHost';
 import config from '@/config';
+import { formatBirthday } from '@/models'
 
 const { openModal } = useModalHost()
 
@@ -19,6 +20,8 @@ function handleListItemClick(id: string) {
     showGames()
   }
 }
+
+const bdayText = formatBirthday(config.birthday)
 
 </script>
 
@@ -33,9 +36,15 @@ function handleListItemClick(id: string) {
 
       <!-- Текст занимает оставшееся место -->
       <div class="max-w-1/3">
-        <div id="username" class="relative flex items-start gap-2">
-          <span>BoBkiNN</span>
-          <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
+        <div id="username" class="relative inline-flex flex-col leading-none">
+          <div class="flex items-start gap-2 leading-none">
+            <span class="align-baseline">BoBkiNN</span>
+            <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
+          </div>
+          <span class="text-sm text-gray-400 relative -top-2">
+            🍰 {{ bdayText }}<br/>
+            🕓 {{ config.myTimezone }}
+          </span>
         </div>
 
         <div id="description">
@@ -76,7 +85,7 @@ function handleListItemClick(id: string) {
 
 .name-icon {
   position: relative;
-  top: 0.4em;
+  /* top: 0.4em; */
   /* shift the icon slightly above the text baseline */
   font-size: 1.5rem;
   /* smaller than name */

@@ -1,4 +1,4 @@
-import type { Project } from "./models";
+import type { Project, Birthday } from "./models";
 
 export interface LinkConfig {
   url: string;
@@ -24,6 +24,8 @@ export interface Config {
   gameUids: Record<string, string>
   altNames: string[]
   projects: Project[]
+  birthday: Birthday
+  myTimezone: string
 }
 
 
@@ -88,5 +90,10 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  birthday: {
+    day: 24,
+    month: 11
+  },
+  myTimezone: "UTC+5"
 } as Config
