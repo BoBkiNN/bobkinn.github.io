@@ -13,7 +13,7 @@ projects.push({
     text: "Some github",
     url: "https://example.com"
   }],
-  descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds<br>meowm meow  eo",
+  descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds\nmeowm meow  eo",
   expandLinks: true,
   icon: "assets/icons/github.svg"
 })
