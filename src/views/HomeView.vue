@@ -42,7 +42,7 @@ const bdayText = formatBirthday(config.birthday)
             <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
           </div>
           <span class="text-sm text-gray-400 relative -top-2">
-            🍰 {{ bdayText }}<br/>
+            🍰 {{ bdayText }}<br />
             🕓 {{ config.myTimezone }}
           </span>
         </div>
@@ -63,6 +63,7 @@ const bdayText = formatBirthday(config.birthday)
     </div>
     <ProjectList />
   </div>
+  <slot name="footer" />
 
 </template>
 
