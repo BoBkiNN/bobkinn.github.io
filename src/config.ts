@@ -6,18 +6,6 @@ export interface LinkConfig {
   icons?: string[];
 }
 
-export class LinkItem {
-  constructor(
-    public url: string,
-    public text: string,
-    public icons: string[]
-  ) {}
-
-  static fromConfig(obj: LinkConfig): LinkItem {
-    return new LinkItem(obj.url, obj.text, obj.icons || []);
-  }
-}
-
 export interface Config {
   mainAvatar: string
   links: Record<string, LinkConfig>

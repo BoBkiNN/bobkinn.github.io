@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { LinkItem } from '@/config'
+import type { LinkConfig } from '@/config'
 
 defineProps<{
-  item: LinkItem
+  item: LinkConfig
 }>()
 </script>
 

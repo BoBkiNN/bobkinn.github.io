@@ -4,24 +4,26 @@
       :src="avatarUrl"
       alt="Avatar"
       class="max-w-96 max-h-96 rounded-full object-cover cursor-pointer shadow-md hover:scale-101 transition-transform"
-      @click="showModal = true"
-    />
-
-    <AvatarModal
-      v-if="showModal"
-      :src="avatarUrl"
-      :download-name="avatarName"
-      @close="showModal = false"
+      @click="showAvatar()"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import config from '@/config';
 import AvatarModal from '@/components/AvatarModal.vue';
+import { useModalHost } from '@/composables/useModalHost';
 
-const showModal = ref(false);
+const { openModal } = useModalHost()
+
+function showAvatar() {
+  openModal(AvatarModal, {
+    src: avatarUrl.value,
+    downloadName: avatarName
+  })
+}
+
 const avatarName = config.mainAvatar;
 
 // импортируем все картинки из папки avatars (Vite сам создаст мапу)
