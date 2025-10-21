@@ -7,7 +7,8 @@ defineProps<{
 
 <template>
   <div
-    class="flex flex-col gap-2 min-h-7 min-w-30 basis-2/7 grow p-3 rounded-2xl shadow bg-[#36363626] backdrop-blur-xs">
+    class="flex flex-col gap-2 min-h-7 min-w-30 basis-2/7 grow p-3 rounded-2xl
+    shadow bg-[#36363626] backdrop-blur-xs hover:shadow-xl transition hover:scale-[1.01]">
     <div class="flex gap-2 items-start">
       <img v-if="project.icon" :src="project.icon" class="w-15 rounded-2xl" />
       <div class="flex gap-2 flex-col">
