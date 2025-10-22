@@ -5,12 +5,14 @@
     <button @click="downloadImage"
       class="mt-4 flex items-center gap-2 text-white text-lg hover:opacity-80 cursor-pointer">
       <span class="material-icons">download</span>
-      Скачать
+      {{ i18n.use("download") }}
     </button>
   </div>
 </template>
 
 <script setup lang="ts">
+import { i18n } from '@/i18n';
+
 const props = defineProps<{
   src: string;
   downloadName: string;
