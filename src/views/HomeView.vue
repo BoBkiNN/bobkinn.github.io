@@ -7,6 +7,7 @@ import ParticlesBackground from '@/components/ParticlesBackground.vue';
 import ProjectList from '@/components/ProjectList.vue';
 import { useModalHost } from '@/composables/useModalHost';
 import config from '@/config';
+import { i18n } from '@/i18n';
 import { formatBirthday } from '@/models'
 
 const { openModal } = useModalHost()
@@ -57,7 +58,7 @@ const bdayText = formatBirthday(config.birthday)
         </div>
       </div>
       <div class="max-w-md p-0">
-        <span id="links-list-title">Мои ссылки</span>
+        <span id="links-list-title">{{ i18n.use('my_links') }}</span>
         <LinksList @item-click="handleListItemClick" />
       </div>
     </div>

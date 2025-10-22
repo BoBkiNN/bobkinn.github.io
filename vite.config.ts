@@ -33,13 +33,29 @@ export default defineConfig({
         const watcher = server.watcher;
         watcher.add(LANG_DIR);
 
-        watcher.on("change", (file) => {
+        watcher.on("change", async (file) => {
           if (file.startsWith(LANG_DIR)) {
             buildI18n();
-            server.ws.send({ type: "full-reload" });
+
+            // Invalidate only the generated JSON
+            const modulePath = '/src/generated/i18n.json'; // adjust if yours is elsewhere
+            const mod = server.moduleGraph.getModuleById(modulePath);
+            if (mod) {
+              server.moduleGraph.invalidateModule(mod);
+              server.ws.send({
+                type: 'update',
+                updates: [{
+                  type: 'js-update',
+                  path: modulePath,
+                  acceptedPath: modulePath,
+                  timestamp: Date.now(),
+                }],
+              });
+            }
           }
         });
-      },
+      }
+
     }
   ],
   resolve: {
