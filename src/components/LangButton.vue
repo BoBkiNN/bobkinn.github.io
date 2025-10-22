@@ -14,7 +14,8 @@ const availableLangs = i18n.languages
 <template>
   <Dropdown class="size-min" theme="lang-dropdown" placement="bottom" :triggers="['hover']" :distance="6" :popperTriggers="['hover']">
     <!-- Button -->
-    <span class="material-icons text-white p-1 rounded-md bg-[#373737] cursor-pointer shadow-2xl">
+    <span class="material-icons text-white p-1 rounded-md bg-[#373737]
+    cursor-pointer shadow-2xl hover:bg-(--color-accent) transition">
       translate
     </span>
 
