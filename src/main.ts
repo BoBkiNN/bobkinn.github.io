@@ -1,7 +1,7 @@
-import './assets/main.css'
 import 'material-icons/iconfont/material-icons.css';
 import "vue-toastification/dist/index.css"
 import 'floating-vue/dist/style.css'
+import './assets/main.css'
 
 import Particles from "@tsparticles/vue3";
 import { loadSlim } from "@tsparticles/slim";
@@ -39,6 +39,15 @@ const options: PluginOptions = {
 }
 
 app.use(Toast, options)
-app.use(FloatingVue)
+app.use(FloatingVue,
+  {
+    themes: {
+      'lang-dropdown': {
+        $extend: 'dropdown',
+        innerClass: 'bg-transparent border-none shadow-none'
+      },
+    },
+  }
+)
 
 app.mount('#app')

@@ -55,6 +55,19 @@ a,
   background-color: unset;
 }
 
+.v-popper--theme-lang-dropdown .v-popper__inner {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.v-popper--theme-lang-dropdown .v-popper__arrow-outer {
+  border-color: #1e1e1e;
+}
+
+.v-popper--theme-lang-dropdown .v-popper__arrow-inner {
+  visibility: hidden;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: #bb9bff46;

@@ -2,6 +2,7 @@
 import AvatarDisplay from '@/components/AvatarDisplay.vue';
 import GamesUidsModal from '@/components/GamesUidsModal.vue';
 import IconTooltip from '@/components/IconTooltip.vue';
+import LangButton from '@/components/LangButton.vue';
 import LinksList from '@/components/LinksList.vue';
 import ParticlesBackground from '@/components/ParticlesBackground.vue';
 import ProjectList from '@/components/ProjectList.vue';
@@ -65,6 +66,9 @@ const bdayText = formatBirthday(config.birthday)
     <ProjectList />
   </div>
   <slot name="footer" />
+  <div class="absolute top-3 right-3">
+    <LangButton />
+  </div>
 
 </template>
 

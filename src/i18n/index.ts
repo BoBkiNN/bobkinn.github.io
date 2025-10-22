@@ -7,6 +7,7 @@ import i18nData from "@/generated/i18n.json";
 interface I18nData {
   data: Record<string, Record<string, string>>;
   large: Record<string, Record<string, string>>;
+  languages: string[];
 }
 
 type Lang = "ru" | "en" | string;
@@ -25,6 +26,10 @@ class I18n {
     return useLangStore()
   }
 
+  public get languages() {
+    return this.data.languages
+  }
+
   get(key: string, ...args: (string | number)[]): string;
   get(key: string, lang: Lang, ...args: (string | number)[]): string;
   get(key: string, langOrArg: Lang | string | number, ...args: (string | number)[]): string {
@@ -37,6 +42,10 @@ class I18n {
       : args;
 
     return this.resolveString(this.data.data, key, lang, ...keyArgs);
+  }
+
+  getExact(key: string, lang: Lang, ...args: (string | number)[]) : string {
+    return this.resolveString(this.data.data, key, lang, ...args);
   }
 
   getLarge(folder: string, ...args: (string | number)[]): string;
