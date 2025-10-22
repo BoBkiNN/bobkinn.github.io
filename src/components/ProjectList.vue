@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { i18n } from '@/i18n';
 import ProjectCard from './ProjectCard.vue';
 import config from '@/config';
 
@@ -21,7 +22,7 @@ projects.push({
 
 <template>
   <div>
-    <span class="title">Мои проекты</span>
+    <span class="title">{{ i18n.use('my_projects') }}</span>
     <div class="flex gap-5 flex-wrap">
       <ProjectCard v-for="project in projects" :key="project.name" :project="project" />
     </div>

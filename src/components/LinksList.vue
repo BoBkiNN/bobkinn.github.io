@@ -2,6 +2,7 @@
 import config from '@/config'
 import LinkItemView from '@/components/LinkItemView.vue'
 import ButtonItem from './ButtonItem.vue';
+import { i18n } from '@/i18n';
 const emit = defineEmits(["itemClick"])
 
 function isEmpty(obj: Record<string, unknown>) {
@@ -13,7 +14,7 @@ function isEmpty(obj: Record<string, unknown>) {
 <template>
   <div id="links" class="rounded-xl overflow-hidden">
     <LinkItemView v-for="(item, key) in config.links" :key="key" :item="item" />
-    <ButtonItem :v-if="!isEmpty(config.gameUids)" text="UID в играх" @click="emit('itemClick', 'uids')"></ButtonItem>
+    <ButtonItem :v-if="!isEmpty(config.gameUids)" :text="i18n.use('game_uids')" @click="emit('itemClick', 'uids')"></ButtonItem>
   </div>
 </template>
 

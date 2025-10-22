@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type { Ref } from 'vue';
+
 defineProps<{
-  text: string
+  text: string | Ref<string>
 }>()
 const emit = defineEmits(["click"])
 </script>
