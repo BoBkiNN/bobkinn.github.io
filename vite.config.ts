@@ -35,7 +35,12 @@ export default defineConfig({
 
         watcher.on("change", async (file) => {
           if (file.startsWith(LANG_DIR)) {
-            buildI18n();
+            try {
+              buildI18n();
+            } catch(e: unknown) {
+              console.error("❌ Failed to rebuild i18n.\n", e)
+            }
+
 
             // Invalidate only the generated JSON
             const modulePath = '/src/generated/i18n.json'; // adjust if yours is elsewhere
