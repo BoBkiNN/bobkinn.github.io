@@ -4,5 +4,9 @@
     "my_projects": "Мои проекты",
     "game_uids": "UID в играх",
     "download": "Скачать",
-    "more_projects": "Когда нибудь будут еще.."
+    "more_projects": "Когда нибудь будут еще..",
+    "games.game": "Игра",
+    "games.uid": "UID",
+    "games.copy": "Скопировать UID",
+    "copied": "Скопировано {0}"
 }
