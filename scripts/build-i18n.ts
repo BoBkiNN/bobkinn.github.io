@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export const LANG_DIR = path.resolve("src/lang");
+export const LANG_DIR = path.resolve("src/assets/lang");
 const OUT_DIR = path.resolve("src/generated");
 const OUT_FILE = path.join(OUT_DIR, "i18n.json");
 
