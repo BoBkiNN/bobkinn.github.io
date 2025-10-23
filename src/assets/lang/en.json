@@ -8,5 +8,8 @@
     "games.game": "Game",
     "games.uid": "UID",
     "games.copy": "Copy UID",
-    "copied": "Copied {0}"
+    "copied": "Copied {0}",
+    "total_code_time": "Total code time:",
+    "tools": "Tools and software that i use:",
+    "tools.hint": "(Hover on icon for description)"
 }

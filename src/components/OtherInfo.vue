@@ -1,15 +1,15 @@
 <template>
   <div class="flex flex-col gap-3">
     <div class="flex gap-3">
-      <span>Total code time:</span>
+      <span>{{ i18n.use("total_code_time") }}</span>
       <a class="codetime" href="https://wakatime.com/@05ad92d2-18a4-4f80-8305-17a666c54f2d" target="_blank"><img
           src="https://wakatime.com/badge/user/05ad92d2-18a4-4f80-8305-17a666c54f2d.svg"
           alt="Total time coded since Feb 20 2023" /></a>
     </div>
     <div class="flex flex-col gap-3">
       <div class="flex flex-col">
-        <span>Tools and software that i use:</span>
-        <span class="text-sm text-gray-400 relative -top-2">(Hover on icon for description)</span>
+        <span>{{ i18n.use("tools") }}</span>
+        <span class="text-sm text-gray-400 relative -top-2">{{ i18n.use("tools.hint") }}</span>
       </div>
 
       <div class="flex gap-2">
@@ -39,6 +39,7 @@
 </template>
 
 <script setup lang="ts">
+import { i18n } from '@/i18n';
 import ToolIcon from './ToolIcon.vue';
 </script>
 
