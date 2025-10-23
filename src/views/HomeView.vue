@@ -4,6 +4,7 @@ import GamesUidsModal from '@/components/GamesUidsModal.vue';
 import IconTooltip from '@/components/IconTooltip.vue';
 import LangButton from '@/components/LangButton.vue';
 import LinksList from '@/components/LinksList.vue';
+import OtherInfo from '@/components/OtherInfo.vue';
 import ParticlesBackground from '@/components/ParticlesBackground.vue';
 import ProjectList from '@/components/ProjectList.vue';
 import { useModalHost } from '@/composables/useModalHost';
@@ -63,6 +64,7 @@ const bdayText = formatBirthday(config.birthday)
         <LinksList @item-click="handleListItemClick" />
       </div>
     </div>
+    <OtherInfo />
     <ProjectList />
   </div>
   <slot name="footer" />
