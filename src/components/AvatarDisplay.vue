@@ -1,11 +1,10 @@
 <template>
-  <div class="relative inline-block w-96 h-96 rounded-full overflow-hidden cursor-pointer select-none">
+  <div class="relative inline-block rounded-full overflow-hidden cursor-pointer select-none">
     <img :src="currentAvatar" alt="Avatar"
-      class="w-full h-full object-cover transition-transform duration-200 ease-in-out hover:scale-101"
+      class="w-full h-full max-w-96 max-h-96 lg:w-96 lg:h-96 object-cover transition-transform duration-200 ease-in-out hover:scale-101"
       @click="onClick" />
 
-    <div
-      class="absolute bottom-0 left-1/2 -translate-x-1/2 text-sm font-semibold
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-sm font-semibold
        text-white/50 bg-black/50 px-2 my-0.5 rounded-md hover:text-white transition duration-200 cursor-default">
       {{ currentIndex + 1 }}/{{ total }}
     </div>

@@ -30,15 +30,15 @@ const bdayText = formatBirthday(config.birthday)
 
 <template>
   <ParticlesBackground />
-  <div class="flex flex-col justify-center min-h-screen gap-10 py-10">
-    <div class="flex justify-between gap-10">
+  <div class="flex flex-col justify-center min-h-screen gap-2 lg:gap-10 lg:py-10">
+    <div class="flex justify-between lg:gap-10 flex-col lg:flex-row">
       <!-- Аватар не сжимается -->
       <div class="flex-shrink-0">
         <AvatarDisplay />
       </div>
 
       <!-- Текст занимает оставшееся место -->
-      <div class="max-w-1/3">
+      <div class="lg:max-w-1/3">
         <div id="username" class="relative inline-flex flex-col leading-none">
           <div class="flex items-start gap-2 leading-none">
             <span class="align-baseline">BoBkiNN</span>

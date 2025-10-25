@@ -2,7 +2,7 @@
   <Icon :icon="icon" :width="size" :height="size" v-tooltip="{
     content: tooltipContent,
     theme: 'tooltip',
-    triggers: ['hover', 'focus'],
+    triggers: isDesktop ? ['hover'] : ['click'],
     placement: 'auto',
     html: true,
     popperTriggers: ['hover'],
@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+import { isDesktop } from '@/utils';
 import { Icon } from '@iconify/vue';
 import { computed } from 'vue';
 

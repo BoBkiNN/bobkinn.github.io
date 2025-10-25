@@ -12,7 +12,7 @@
         <span class="text-sm text-gray-400 relative -top-2">{{ i18n.use("tools.hint") }}</span>
       </div>
 
-      <div class="flex gap-2">
+      <div class="flex gap-2 flex-wrap lg:flex-nowrap">
         <ToolIcon icon="devicon:python" name="Python" description="Using it for small scripts and projects" />
         <ToolIcon icon="devicon:kotlin" name="Kotlin" />
         <ToolIcon icon="devicon:java" name="Java" />
