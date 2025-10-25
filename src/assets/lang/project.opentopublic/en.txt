@@ -1,0 +1,1 @@
+Minecraft mod that adds ability to open world to internet using UPnP, changing MOTD and other settings.

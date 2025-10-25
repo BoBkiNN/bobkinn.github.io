@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { i18n } from "@/i18n";
 import { type Project } from "@/models";
 defineProps<{
   project: Project
@@ -14,7 +15,7 @@ defineProps<{
       <div class="flex gap-2 flex-col">
         <h2 class="text-white">{{ project.name }}</h2>
         <p class="text-white break-all whitespace-pre-line">
-          {{ project.descriptionId }}
+          {{ i18n.useLarge(project.descriptionId).value }}
         </p>
         <!-- TODO use description id for i18n -->
       </div>

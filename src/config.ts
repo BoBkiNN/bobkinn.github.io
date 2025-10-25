@@ -42,7 +42,7 @@ export default {
     {
       name: "OpenToPublic",
       icon: "https://github.com/BoBkiNN/OpenToPublic/blob/9151d43fe4437e2dbada6d0cda842c0b0b177abe/common/src/main/resources/assets/opentopublic/icon.png?raw=true",
-      descriptionId: "Some descr usasdyasduyasguydfauysfduyasfduyfasdfuayfduasdfasoyfdoyasfdoyfasoydf fgdfg\nThis is some text with meaning that must be long enough to see bug. Oh i see it works. But is it? Yep its works",
+      descriptionId: "project.opentopublic",
       expandLinks: true,
       links: [
         {
