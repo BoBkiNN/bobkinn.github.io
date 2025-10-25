@@ -25,12 +25,7 @@ const { openModal } = useModalHost();
 const store = useAvatarStore();
 
 function showAvatar() {
-  openModal(AvatarModal, {
-    src: store.current,
-    downloadName: store.name,
-    prev: store.prev,
-    next: store.next,
-  });
+  openModal(AvatarModal);
 }
 
 function onClick(e: MouseEvent) {
