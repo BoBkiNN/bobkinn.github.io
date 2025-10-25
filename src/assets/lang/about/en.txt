@@ -1,0 +1,9 @@
+Hello and welcome to my website!
+People call me Bob and I am a student from Kazakhstan.
+Mostly, I am a technical administrator for Minecraft servers and a programmer.\n
+I have been programming for 4 years - at first, I was making Discord bots in Python,
+then I started creating my first Bukkit plugins in Java, and after that, I am learning Kotlin, Compose and Vue
+(little by little)<br>
+Formally, I am working on the second season of a Minecraft server.<br>
+I love eating sandwiches and staying at home under a blanket.
+<img src="https://cdn.discordapp.com/emojis/880215427895140412.png", width=24>
