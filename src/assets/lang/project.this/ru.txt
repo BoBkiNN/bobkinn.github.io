@@ -1,0 +1,2 @@
+Сделал его чтобы был, почему нет?
+Написано на Vue+TypeScript+TailwindCSS

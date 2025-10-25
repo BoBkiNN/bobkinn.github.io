@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { storeToRefs } from "pinia";
 import { useLangStore } from "@/stores/langStore";
 import i18nData from "@/generated/i18n.json";
@@ -72,6 +72,12 @@ class I18n {
   useLarge(folder: string, ...args: (string | number)[]) {
     const { lang } = storeToRefs(this.store);
     return computed(() => this.getLarge(folder, lang.value, ...args));
+  }
+
+  usePrefixed(key: string, ...args: (string | number)[]) {
+    if (key.startsWith("$$")) return key
+    if (key.startsWith("$")) return this.use(key.substring(1), ...args)
+    else return ref(key)
   }
 
 

@@ -13,7 +13,7 @@ defineProps<{
     <div class="flex gap-2 items-start">
       <img v-if="project.icon" :src="project.icon" class="w-15 rounded-2xl" />
       <div class="flex gap-2 flex-col">
-        <h2 class="text-white">{{ project.name }}</h2>
+        <h2 class="text-white">{{ i18n.usePrefixed(project.name) }}</h2>
         <p class="text-white break-all whitespace-pre-line">
           {{ i18n.useLarge(project.descriptionId).value }}
         </p>

@@ -1,0 +1,2 @@
+Made it because why not.
+Written on Vue+TypeScript+TailwindCSS

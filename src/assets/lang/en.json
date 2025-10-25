@@ -13,5 +13,6 @@
     "tools": "Tools and software that i use:",
     "tools.hint": "(Hover on icon for description)",
     "birthday.hint": "My birthday",
-    "timezone.hint": "My time zone"
+    "timezone.hint": "My time zone",
+    "project.this.title": "This page"
 }

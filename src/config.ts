@@ -60,6 +60,21 @@ export default {
           ]
         }
       ]
+    },
+    {
+      name: "$project.this.title",
+      descriptionId: "project.this",
+      expandLinks: true,
+      icon: "web-app-manifest-192x192.png",
+      links: [
+        {
+          url: "https://github.com/BoBkiNN/bobkinn.github.io/",
+          text: "GitHub",
+          icons: [
+            "assets/icons/github.svg"
+          ]
+        }
+      ]
     }
   ],
   birthday: {
