@@ -9,16 +9,36 @@
       {{ currentIndex + 1 }}/{{ total }}
     </div>
 
-    <div class="absolute top-0 left-0 w-3/12 h-full" @click.stop="store.prev"></div>
-    <div class="absolute top-0 right-0 w-3/12 h-full" @click.stop="store.next"></div>
+    <div class="absolute top-0 left-0 w-3/12 h-full flex items-center" @click.stop="store.prev"
+      @mouseenter="hoveredLeft = true" @mouseleave="hoveredLeft = false">
+      <Transition name="fade">
+        <InlineSvg v-if="hoveredLeft || !isDesktop" :src="ArrowLeft" width="24" class="drop-shadow-sm/60" />
+      </Transition>
+
+    </div>
+    <div class="absolute top-0 right-0 w-3/12 h-full flex items-center justify-end content-center" @click.stop="store.next"
+      @mouseenter="hoveredRight = true"
+      @mouseleave="hoveredRight = false">
+      <Transition name="fade">
+        <InlineSvg v-if="hoveredRight || !isDesktop" :src="ArrowRight" width="24" class="drop-shadow-sm/60" />
+      </Transition>
+
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import AvatarModal from '@/components/AvatarModal.vue';
 import { useModalHost } from '@/composables/useModalHost';
 import { useAvatarStore } from '@/stores/avatarStore';
+import ArrowLeft from "@/assets/icons/ArrowLeft.svg"
+import ArrowRight from "@/assets/icons/ArrowRight.svg"
+import InlineSvg from 'vue-inline-svg'
+import { isDesktop } from '@/utils';
+
+const hoveredLeft = ref(false)
+const hoveredRight = ref(false)
 
 const { openModal } = useModalHost();
 const store = useAvatarStore();
@@ -47,5 +67,20 @@ const total = computed(() => store.total);
 /* Чтобы клики по зонам не мешали hover-анимации */
 div[role="click-zone"] {
   background: transparent;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
 }
 </style>

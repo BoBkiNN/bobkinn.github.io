@@ -14,6 +14,7 @@ import router from './router'
 
 import Toast, { type PluginOptions, POSITION } from "vue-toastification"
 import FloatingVue from 'floating-vue'
+import InlineSvg from 'vue-inline-svg';
 
 const app = createApp(App)
 const pinia = createPinia()
@@ -49,5 +50,6 @@ app.use(FloatingVue,
     },
   }
 )
+app.component('inline-svg', InlineSvg)
 
 app.mount('#app')
