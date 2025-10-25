@@ -1,5 +1,5 @@
 Hello and welcome to my website!
-People call me Bob and I am a student from Kazakhstan.
+People online call me Bob and I am a student from Kazakhstan.
 Mostly, I am a technical administrator for Minecraft servers and a programmer.\n
 I have been programming for 4 years - at first, I was making Discord bots in Python,
 then I started creating my first Bukkit plugins in Java, and after that, I am learning Kotlin, Compose and Vue
