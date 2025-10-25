@@ -17,7 +17,6 @@ defineProps<{
         <p class="text-white whitespace-pre-line">
           {{ i18n.useLarge(project.descriptionId).value }}
         </p>
-        <!-- TODO use description id for i18n -->
       </div>
     </div>
     <template v-if="project.expandLinks">
