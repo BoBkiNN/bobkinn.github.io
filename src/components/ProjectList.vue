@@ -3,21 +3,7 @@ import { i18n } from '@/i18n';
 import ProjectCard from './ProjectCard.vue';
 import config from '@/config';
 
-// defineProps<{
-//   projects: Project[]
-// }>()
 const projects = config.projects
-projects.push({
-  name: "Test",
-  links: [{
-    icons: ["assets/icons/github.svg"],
-    text: "Some github",
-    url: "https://example.com"
-  }],
-  descriptionId: "Test Project. Some long loneg asdsadasd descr sdkfsdfsBFDLsljdf dfhsadds\nmeowm meow  eofff",
-  expandLinks: true,
-  icon: "assets/icons/github.svg"
-})
 </script>
 
 <template>
