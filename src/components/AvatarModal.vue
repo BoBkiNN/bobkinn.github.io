@@ -1,13 +1,21 @@
 <template>
-  <div class="text-white rounded-xl p-4 shadow-xl relative">
-    <!-- reactive image -->
+  <div class="text-white shadow-xl relative flex flex-col items-center">
+    <span v-if="isDesktop">{{ i18n.use("avatar_arrows") }}</span>
     <img :src="store.current" alt="Avatar full view" class="max-h-[80vh] max-w-[90vw] object-contain select-none" />
 
-    <button @click="downloadImage"
-      class="mt-4 flex items-center gap-2 text-white text-lg hover:opacity-80 cursor-pointer">
-      <span class="material-icons">download</span>
-      {{ i18n.use('download') }}
-    </button>
+    <div class="w-[100%] justify-between flex-row flex mt-4">
+      <button @click="downloadImage"
+        class="flex items-center gap-2 text-white text-lg hover:opacity-80 cursor-pointer">
+        <span class="material-icons">download</span>
+        {{ i18n.use('download') }}
+      </button>
+      <button @click="modalHost.closeModal()"
+        class="flex items-center gap-2 text-white text-lg hover:opacity-80 cursor-pointer">
+        <span class="material-icons">close</span>
+        {{ i18n.use('close') }}
+      </button>
+    </div>
+
   </div>
 </template>
 
@@ -15,6 +23,10 @@
 import { onMounted, onBeforeUnmount } from 'vue';
 import { i18n } from '@/i18n';
 import { useAvatarStore } from '@/stores/avatarStore';
+import { useModalHost } from '@/composables/useModalHost';
+import { isDesktop } from '@/utils';
+
+const modalHost = useModalHost()
 
 const store = useAvatarStore();
 

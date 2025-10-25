@@ -14,5 +14,7 @@
     "tools.hint": "(Hover on icon for description)",
     "birthday.hint": "My birthday",
     "timezone.hint": "My time zone",
-    "project.this.title": "This page"
+    "project.this.title": "This page",
+    "close": "Close",
+    "avatar_arrows": "Use left (←) and right (→) keyboard keys to swap"
 }
