@@ -43,7 +43,8 @@ export function buildI18n(): void {
         const lang = path.basename(file, ".txt");
         foundLangs.add(lang);
 
-        const text = fs.readFileSync(path.join(fullPath, file), "utf8").trim();
+        const text = fs.readFileSync(path.join(fullPath, file), "utf8").trim()
+          .replace("\r\n", "\n");
         result.large[folder] ??= {};
         result.large[folder][lang] = text;
       }
