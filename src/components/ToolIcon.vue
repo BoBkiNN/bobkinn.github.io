@@ -8,7 +8,7 @@
     popperTriggers: ['hover'],
     delay: { show: 100, hide: 100 },
     distance: 6
-  }" :color="color"></Icon>
+  }" :color="color" class="focus:outline-none"></Icon>
 </template>
 
 <script setup lang="ts">
