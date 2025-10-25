@@ -6,7 +6,7 @@
 
     <div
       class="absolute bottom-0 left-1/2 -translate-x-1/2 text-sm font-semibold
-       text-white/50 px-2 py-0.5 rounded-md hover:text-white transition duration-200 cursor-default">
+       text-white/50 bg-black/50 px-2 my-0.5 rounded-md hover:text-white transition duration-200 cursor-default">
       {{ currentIndex + 1 }}/{{ total }}
     </div>
 
