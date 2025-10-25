@@ -62,12 +62,12 @@ const bdayText = formatBirthday(config.birthday)
         </div>
 
         <div id=" description">
-          <span>
-            Long long long long text sdfdsfdsfbsdf dsfdsfdsf sdf sdfdsf dsfdsfdsf
+          <span v-html="i18n.useLarge('about').value">
+          </span>
+          <!-- Long long long long text sdfdsfdsfbsdf dsfdsfdsf sdf sdfdsf dsfdsfdsf
             sdfsdfdsf ds fs df ds fdsf ds f dsf ds f dsf sdf ds fs df sdf sd f dsf<br>
             sdfdsfdsjfndksjbflbasdfbaesbflbsdfds ds f SDFjkhKLSDFh 🎲🎲🎰🎲🎰🎰
-            🕹🕹🕹🎮🎮
-          </span>
+            🕹🕹🕹🎮🎮 -->
         </div>
       </div>
       <div class="max-w-md p-0">

@@ -59,7 +59,7 @@ class I18n {
       ? [langOrArg, ...args]
       : args;
 
-    return this.resolveString(this.data.large, folder, lang, ...folderArgs).replace("\n", "<br>");
+    return this.resolveString(this.data.large, folder, lang, ...folderArgs).replace("\\n", "<br>");
   }
 
   /** Reactive version — recomputes when language changes. */
