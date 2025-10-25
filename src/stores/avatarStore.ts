@@ -1,13 +1,7 @@
 import { defineStore } from 'pinia'
 import config from '@/config'
+import { avatarList } from '@/generated/avatars'
 
-const avatarsMap = import.meta.glob('@/assets/avatars/*', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-})
-
-const avatarList = Object.values(avatarsMap) as string[]
 const initialIndex = Math.max(
   avatarList.findIndex((p) => p.includes(config.mainAvatar)),
   0

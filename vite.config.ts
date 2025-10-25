@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import { execSync } from 'child_process'
 import { buildI18n, LANG_DIR } from "./scripts/build-i18n";
+import { avatarsPlugin } from "./plugin.avatars"
 
 const commitHash = execSync('git rev-parse HEAD').toString().trim()
 
@@ -61,7 +62,8 @@ export default defineConfig({
         });
       }
 
-    }
+    },
+    avatarsPlugin()
   ],
   resolve: {
     alias: {
