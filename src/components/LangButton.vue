@@ -15,7 +15,6 @@ const dropdownRef = ref<InstanceType<typeof Dropdown>>()
 
 function setLang(lang: string) {
   store.lang = lang
-  dropdownRef.value?.hide()
 }
 </script>
 
@@ -23,6 +22,7 @@ function setLang(lang: string) {
   <Dropdown ref="dropdownRef" class="size-min" theme="lang-dropdown"
   placement="bottom" :triggers="['hover']"
   :distance="6" :popperTriggers="['hover']"
+  :delay="{hide: 300, show: 0}"
   :autoHide="false">
     <!-- Button -->
     <span class="material-icons text-white p-1 rounded-md bg-[#373737]
