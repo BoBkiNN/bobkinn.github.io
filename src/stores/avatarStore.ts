@@ -7,11 +7,18 @@ const initialIndex = Math.max(
   0
 )
 
+const preloadedImages: HTMLImageElement[] = avatarList.map((url) => {
+  const img = new Image()
+  img.src = url
+  return img
+})
+
 export const useAvatarStore = defineStore('avatar', {
   state: () => ({
     list: avatarList,
     index: initialIndex,
-    current: avatarList[initialIndex] || "unknown"
+    current: avatarList[initialIndex] || "unknown",
+    preloaded: preloadedImages
   }),
   getters: {
     name(state) {
