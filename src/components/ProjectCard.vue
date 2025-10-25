@@ -14,7 +14,7 @@ defineProps<{
       <img v-if="project.icon" :src="project.icon" class="w-15 rounded-2xl" />
       <div class="flex gap-2 flex-col">
         <h2 class="text-white">{{ i18n.usePrefixed(project.name) }}</h2>
-        <p class="text-white break-all whitespace-pre-line">
+        <p class="text-white whitespace-pre-line">
           {{ i18n.useLarge(project.descriptionId).value }}
         </p>
         <!-- TODO use description id for i18n -->
