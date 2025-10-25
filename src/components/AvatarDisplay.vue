@@ -1,5 +1,5 @@
 <template>
-  <div class="relative inline-block max-w-96 max-h-96 rounded-full overflow-hidden cursor-pointer select-none">
+  <div class="relative inline-block w-96 h-96 rounded-full overflow-hidden cursor-pointer select-none">
     <img :src="currentAvatar" alt="Avatar"
       class="w-full h-full object-cover transition-transform duration-200 ease-in-out hover:scale-101"
       @click="onClick" />
