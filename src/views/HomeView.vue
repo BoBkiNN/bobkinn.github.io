@@ -45,12 +45,23 @@ const bdayText = formatBirthday(config.birthday)
             <IconTooltip :tooltip="config.altNames.join('<br>')" icon="notes" class="name-icon" />
           </div>
           <span class="text-sm text-gray-400 relative -top-2">
-            🍰 {{ bdayText }}<br />
-            🕓 {{ config.myTimezone }}
+            <span v-tooltip="{
+              content: i18n.use('birthday.hint'),
+              triggers: ['hover', 'focus'],
+              placement: 'right-start',
+              popperTriggers: ['hover']
+            }">🍰 {{ bdayText }}</span>
+            <br />
+            <span v-tooltip="{
+              content: i18n.use('timezone.hint'),
+              triggers: ['hover', 'focus'],
+              placement: 'right-start',
+              popperTriggers: ['hover']
+            }">🕓 {{ config.myTimezone }}</span>
           </span>
         </div>
 
-        <div id="description">
+        <div id=" description">
           <span>
             Long long long long text sdfdsfdsfbsdf dsfdsfdsf sdf sdfdsf dsfdsfdsf
             sdfsdfdsf ds fs df ds fdsf ds f dsf ds f dsf sdf ds fs df sdf sd f dsf<br>
