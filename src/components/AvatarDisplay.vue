@@ -1,7 +1,7 @@
 <template>
   <div class="relative inline-block rounded-full overflow-hidden cursor-pointer select-none">
     <img :src="currentAvatar" alt="Avatar"
-      class="w-full h-full max-w-96 max-h-96 lg:w-96 lg:h-96 object-cover transition-transform duration-200 ease-in-out hover:scale-101"
+      class="w-full h-full aspect-square max-w-96 max-h-96 lg:w-96 lg:h-96 object-cover transition-transform duration-200 ease-in-out hover:scale-101"
       @click="onClick" />
 
     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-sm font-semibold

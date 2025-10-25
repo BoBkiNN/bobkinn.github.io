@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import 'floating-vue/dist/style.css'
 import { vTooltip } from 'floating-vue'
+import { isDesktop } from '@/utils';
 
 defineProps<{
   tooltip: string
@@ -12,7 +13,7 @@ defineProps<{
   <span v-tooltip="{
     content: tooltip,
     theme: 'tooltip',
-    triggers: ['hover', 'focus'],
+    triggers: isDesktop ? ['hover', 'focus'] : ['click'],
     placement: 'right-start',
     html: true,
     popperTriggers: ['hover'],
