@@ -26,7 +26,7 @@ function setLang(lang: string) {
   :autoHide="false">
     <!-- Button -->
     <span class="material-icons text-white p-1 rounded-md bg-[#373737]
-    cursor-pointer shadow-2xl hover:bg-(--color-accent) transition">
+    cursor-pointer shadow-2xl hover:bg-(--color-accent) transition select-none">
       translate
     </span>
 
