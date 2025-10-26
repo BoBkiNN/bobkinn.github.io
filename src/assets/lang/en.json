@@ -23,6 +23,5 @@
     "tool.android.desc": "I had a bit of exprience creating several Android apps",
     "tool.fabric.desc": "My preferred Minecraft modding platform",
     "tool.vscode.desc": "My code editor for everything (except JVM languages)",
-    "tool.ubuntu.desc": "I often manage Ubuntu VPS",
-    "tool.debian.desc": "My home server uses OMV which is based on Debian"
+    "tool.linux.desc": "I often manage VPS for Minecraft and I have home server"
 }

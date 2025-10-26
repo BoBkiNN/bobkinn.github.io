@@ -30,8 +30,7 @@
         <ToolIcon icon="simple-icons:github" name="GitHub" />
         <ToolIcon icon="devicon:git" name="Git" />
 
-        <ToolIcon icon="devicon:ubuntu" name="Ubuntu" description="$tool.ubuntu.desc" />
-        <ToolIcon icon="devicon:debian" name="Debian" description="$tool.debian.desc" />
+        <ToolIcon icon="devicon:linux" name="Linux" description="$tool.linux.desc" />
       </div>
     </div>
   </div>
