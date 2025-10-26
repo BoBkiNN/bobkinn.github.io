@@ -9,7 +9,7 @@
     <div class="flex flex-col gap-3">
       <div class="flex flex-col">
         <span>{{ i18n.use("tools") }}</span>
-        <span class="text-sm text-gray-400 relative -top-2">{{ i18n.use("tools.hint") }}</span>
+        <span class="text-sm text-gray-400 relative -top-2">{{ i18n.use(isDesktop ? "tools.hint" : "tools.hint.mobile") }}</span>
       </div>
 
       <div class="flex gap-2 flex-wrap lg:flex-nowrap">
@@ -39,6 +39,7 @@
 <script setup lang="ts">
 import { i18n } from '@/i18n';
 import ToolIcon from './ToolIcon.vue';
+import { isDesktop } from '@/utils';
 </script>
 
 <style scoped>
