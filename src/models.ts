@@ -28,6 +28,7 @@ export interface Config {
   gameUids: Record<string, string>
   altNames: string[]
   projects: Project[]
+  more_projects_treshold: number
   birthday: Birthday
   myTimezone: string,
   thisRepositoryLink: string

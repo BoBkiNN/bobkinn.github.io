@@ -96,6 +96,7 @@ export default {
       ]
     }
   ],
+  more_projects_treshold: 5,
   birthday: {
     day: 24,
     month: 11
