@@ -6,7 +6,7 @@ export interface Project {
    */
   descriptionId: string
   icon?: string
-  expandLinks: boolean
+  expandLinks?: boolean
   links: LinkConfig[]
 }
 
