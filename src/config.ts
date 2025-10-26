@@ -43,7 +43,6 @@ export default {
       name: "OpenToPublic",
       icon: "https://github.com/BoBkiNN/OpenToPublic/blob/9151d43fe4437e2dbada6d0cda842c0b0b177abe/common/src/main/resources/assets/opentopublic/icon.png?raw=true",
       descriptionId: "project.opentopublic",
-      expandLinks: true,
       links: [
         {
           url: "https://github.com/BoBkiNN/OpenToPublic",
@@ -64,7 +63,6 @@ export default {
     {
       name: "$project.this.title",
       descriptionId: "project.this",
-      expandLinks: true,
       icon: "web-app-manifest-192x192.png",
       links: [
         {
