@@ -20,13 +20,13 @@ defineProps<{
       </div>
     </div>
     <template v-if="project.expandLinks">
-      <a v-for="link in project.links" :key="link.url" :href="link.url" class="flex flex-row gap-2 rounded-sm">
+      <a v-for="link in project.links" :key="link.url" :href="link.url" target="_blank" class="flex flex-row gap-2 rounded-sm">
         <img v-for="icon in link.icons || []" :key="icon" :src="icon" class="w-5 h-5" />
         <span>{{ link.text }}</span>
       </a>
     </template>
     <div v-else class="flex gap-1">
-      <a v-for="link in project.links" :key="link.url" :href="link.url" class="rounded-sm">
+      <a v-for="link in project.links" :key="link.url" :href="link.url" target="_blank" class="rounded-sm">
         <img v-for="icon in link.icons || []" :key="icon" :src="icon" class="w-5 h-5" />
       </a>
     </div>
