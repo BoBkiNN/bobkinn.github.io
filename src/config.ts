@@ -73,6 +73,27 @@ export default {
           ]
         }
       ]
+    },
+    {
+      name: "ClickHarvest",
+      descriptionId: "project.clickharvest",
+      icon: "https://cdn.modrinth.com/data/csrLULrs/2b2b0fd256cc20c51d16c8982ca1c4307471fbd2_96.webp",
+      links: [
+        {
+          url: "https://github.com/BoBkiNN/ClickHarvest",
+          text: "GitHub",
+          icons: [
+            "assets/icons/github.svg"
+          ]
+        },
+        {
+          url: "https://modrinth.com/mod/clickharvest",
+          text: "Modrinth",
+          icons: [
+            "https://github.com/modrinth/code/blob/4a9f0b8a0ef189c15b411815f28e845109120316/apps/app/icons/Square30x30Logo.png?raw=true"
+          ]
+        }
+      ]
     }
   ],
   birthday: {

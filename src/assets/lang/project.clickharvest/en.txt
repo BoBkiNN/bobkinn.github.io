@@ -1,0 +1,1 @@
+Very simple Minecraft Bukkit plugin thats allows player to harvest crops using only right click.
