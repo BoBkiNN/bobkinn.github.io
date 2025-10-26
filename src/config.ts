@@ -84,6 +84,23 @@ export default {
           icon: "assets/icons/modrinth.png"
         }
       ]
+    },
+    {
+      name: "CustomDiscs",
+      descriptionId: "project.customdiscs",
+      icon: "https://cdn.modrinth.com/data/jaSiMenJ/633a66f405d803bf3c1469d06d70e7412e0785c8.png",
+      links: [
+        {
+          url: "https://github.com/BoBkiNN/CustomDiscs",
+          text: "GitHub",
+          icon: "assets/icons/github.svg"
+        },
+        {
+          url: "https://modrinth.com/mod/customdiscs",
+          text: "Modrinth",
+          icon: "assets/icons/modrinth.png"
+        }
+      ]
     }
   ],
   more_projects_treshold: 5,
