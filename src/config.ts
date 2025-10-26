@@ -53,6 +53,11 @@ export default {
           url: "https://modrinth.com/mod/opentopublic",
           text: "Modrinth",
           icon: "assets/icons/modrinth.png"
+        },
+        {
+          url: "https://www.curseforge.com/minecraft/mc-mods/opentopublic",
+          text: "CurseForge",
+          icon: "https://www.curseforge.com/favicon.ico"
         }
       ]
     },
