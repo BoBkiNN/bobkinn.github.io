@@ -4,3 +4,4 @@ My page, built with Vue 3 and TypeScript
 * ~~New tool descriptions and translations~~
 * Add more projects
 * ~~Change avatar modal text font~~
+* Project badges
