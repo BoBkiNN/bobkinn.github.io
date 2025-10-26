@@ -1,6 +1,6 @@
 <template>
-  <div class="text-white shadow-xl relative flex flex-col items-center">
-    <span v-if="isDesktop">{{ i18n.use("avatar_arrows") }}</span>
+  <div class="text-white shadow-xl relative flex flex-col items-center font-[Montserrat]">
+    <span class="font-bold" v-if="isDesktop">{{ i18n.use("avatar_arrows") }}</span>
     <img :src="store.current" alt="Avatar full view" class="max-h-[80vh] max-w-[90vw] object-contain select-none" />
 
     <div class="w-[100%] justify-between flex-row flex mt-4">
