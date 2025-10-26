@@ -19,7 +19,7 @@ export interface Birthday {
 export interface LinkConfig {
   url: string;
   text: string;
-  icons?: string[];
+  icon?: string;
 }
 
 export interface Config {

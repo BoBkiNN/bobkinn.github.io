@@ -14,10 +14,8 @@ defineProps<{
     class="flex items-center transition-colors duration-200 hover:bg-gray-100 py-3"
   >
     <div class="flex items-center gap-3 px-3">
-      <img
-        v-for="(icon, i) in item.icons"
-        :key="i"
-        :src="icon"
+      <img v-if="item.icon"
+        :src="item.icon"
         alt="icon"
         class="w-6 h-6 object-contain rounded-sm"
       />
