@@ -17,7 +17,7 @@ function copy(uid: string) {
 </script>
 
 <template>
-  <div class="bg-neutral-900 text-white rounded-xl p-4 w-[400px] shadow-xl relative">
+  <div class="bg-neutral-900 text-white rounded-xl p-4 w-[400px] max-w-[90vw] shadow-xl relative">
     <!-- Крестик закрытия -->
     <button @click="emit('close')" class="absolute top-3 right-3 text-gray-400 hover:text-white transition cursor-pointer"
       title="Закрыть">
