@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+import { i18n } from '@/i18n';
 import { isDesktop } from '@/utils';
 import { Icon } from '@iconify/vue';
 import { computed } from 'vue';
@@ -35,7 +36,7 @@ const tooltipContent = computed(() => {
     ret += "<br>"
   }
   if (props.description) {
-    ret += "- " +props.description
+    ret += "- " + i18n.usePrefixed(props.description).value
   }
   return ret
 })

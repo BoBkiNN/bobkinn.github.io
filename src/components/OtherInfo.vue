@@ -13,26 +13,25 @@
       </div>
 
       <div class="flex gap-2 flex-wrap lg:flex-nowrap">
-        <ToolIcon icon="devicon:python" name="Python" description="Using it for small scripts and projects" />
+        <ToolIcon icon="devicon:python" name="Python" description="$tool.python.desc" />
         <ToolIcon icon="devicon:kotlin" name="Kotlin" />
         <ToolIcon icon="devicon:java" name="Java" />
         <ToolIcon icon="devicon:html5" name="HTML" />
         <ToolIcon icon="devicon:css3" name="CSS" />
-        <ToolIcon icon="devicon:vuejs" name="Vue" description="This page is written using it!" />
+        <ToolIcon icon="devicon:vuejs" name="Vue" description="$tool.vue.desc" />
         <ToolIcon icon="devicon:typescript" name="TypeScript" />
-        <ToolIcon icon="devicon:android" name="Android" description="I had a bit of exprience creating several Android apps"/>
+        <ToolIcon icon="devicon:android" name="Android" description="$tool.android.desc"/>
         <ToolIcon icon="devicon:jetpackcompose" name="Jetpack Compose"/>
 
-        <ToolIcon icon="material-icon-theme:minecraft-fabric" name="FabricMC" description="My preferred Minecraft modding platform"/>
-        <ToolIcon icon="devicon:vscode" name="VS Code"
-          description="My code editor for everything (except JVM languages)" />
+        <ToolIcon icon="material-icon-theme:minecraft-fabric" name="FabricMC" description="$tool.fabric.desc"/>
+        <ToolIcon icon="devicon:vscode" name="VS Code" description="$tool.vscode.desc" />
         <ToolIcon icon="devicon:intellij" name="IntelliJ IDEA" />
         <ToolIcon icon="devicon:androidstudio" name="Android Studio" />
         <ToolIcon icon="simple-icons:github" name="GitHub" />
         <ToolIcon icon="devicon:git" name="Git" />
 
-        <ToolIcon icon="devicon:ubuntu" name="Ubuntu" description="I often manage Ubuntu VPS" />
-        <ToolIcon icon="devicon:debian" name="Debian" description="My home server uses OMV which is based on Debian" />
+        <ToolIcon icon="devicon:ubuntu" name="Ubuntu" description="$tool.ubuntu.desc" />
+        <ToolIcon icon="devicon:debian" name="Debian" description="$tool.debian.desc" />
       </div>
     </div>
   </div>
