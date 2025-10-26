@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col mb-5">
-    <div class="flex gap-3">
+    <div class="flex gap-3 items-center">
       <span>{{ i18n.use("total_code_time") }}</span>
       <a class="codetime" href="https://wakatime.com/@05ad92d2-18a4-4f80-8305-17a666c54f2d" target="_blank"><img
           src="https://wakatime.com/badge/user/05ad92d2-18a4-4f80-8305-17a666c54f2d.svg"
