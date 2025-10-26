@@ -20,10 +20,10 @@
         <ToolIcon icon="devicon:css3" name="CSS" />
         <ToolIcon icon="devicon:vuejs" name="Vue" description="This page is written using it!" />
         <ToolIcon icon="devicon:typescript" name="TypeScript" />
-        <ToolIcon icon="devicon:android" name="Android" />
-        <ToolIcon icon="devicon:jetpackcompose" name="Jetpack Compose" />
+        <ToolIcon icon="devicon:android" name="Android" description="I had a bit of exprience creating several Android apps"/>
+        <ToolIcon icon="devicon:jetpackcompose" name="Jetpack Compose"/>
 
-        <ToolIcon icon="material-icon-theme:minecraft-fabric" name="FabricMC" />
+        <ToolIcon icon="material-icon-theme:minecraft-fabric" name="FabricMC" description="My preferred Minecraft modding platform"/>
         <ToolIcon icon="devicon:vscode" name="VS Code"
           description="My code editor for everything (except JVM languages)" />
         <ToolIcon icon="devicon:intellij" name="IntelliJ IDEA" />
